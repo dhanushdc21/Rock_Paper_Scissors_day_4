@@ -37,6 +37,7 @@ while True:
    print(scissors)
  else:
    print("You have to choose from the three options only. Thats the game.")
+   break
  print("Computer's choice :\n")
  comp_choice=random.randint(0,2)
  if comp_choice==0:
