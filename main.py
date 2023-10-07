@@ -45,6 +45,12 @@ while True:
    print(paper)
  else:
    print(scissors)
+ if ((choice[0]=="r" and comp_choice==2) or (choice[0]=="p" and comp_choice==0) or (choice[0]=="s" and comp_choice==1)):
+   print("You Win!!!")
+ elif((choice[0]=="r" and comp_choice==0) or (choice[0]=="p" and comp_choice==1) or (choice[0]=="s" and comp_choice==2)):
+   print("It's a Draw.")
+ else:
+   print("You lost.")
  print("This reply has exited. Run again?")  
  reply=input().lower()
  if reply[0]=="n":
